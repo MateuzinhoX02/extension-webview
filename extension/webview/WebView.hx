@@ -1,11 +1,7 @@
 package extension.webview;
 
 import haxe.Json;
-#if (openfl < "4.0.0")
-import openfl.utils.JNI;
-#else
 import lime.system.JNI;
-#end
 	
 class WebView  {
 
@@ -41,7 +37,7 @@ class WebView  {
 		?urlWhitelist :Array<String>,
 		?urlBlacklist :Array<String>,
 		?useWideViewPort :Bool = false,						// Android only
-		?mediaPlaybackRequiresUserGesture :Bool = true		// Android only
+		?mediaPlaybackRequiresUserGesture :Bool = false		// Android only
 	) :Void {
 		init();
 		if(urlWhitelist!=null) urlWhitelist.push(url);
@@ -73,7 +69,7 @@ class WebView  {
 		html:String, 
 		floating:Bool=false,
 		?useWideViewPort :Bool = false,						// Android only
-		?mediaPlaybackRequiresUserGesture :Bool = true		// Android only
+		?mediaPlaybackRequiresUserGesture :Bool = false		// Android only
 	) :Void {
 		init();
 		#if android
