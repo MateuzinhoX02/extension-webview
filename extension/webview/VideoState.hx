@@ -9,7 +9,7 @@ import flixel.text.FlxText;
 
 using StringTools;
 
-class VideoState extends MusicBeatState
+class VideoState extends FlxState
 {
 	var changecount = 0;
 	public static var androidPath:String = 'file:///android_asset/';
