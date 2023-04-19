@@ -6,10 +6,11 @@ package;
 import extension.webview.WebView;
 import flixel.FlxG;
 import flixel.text.FlxText;
+import flixel.FlxSubstate;
 
 using StringTools;
 
-class VideoSubState extends MusicBeatSubstate
+class VideoSubState extends FlxSubstate
 {
 	public static var androidPath:String = 'file:///android_asset/';
 
