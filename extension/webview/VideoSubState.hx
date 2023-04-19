@@ -3,7 +3,7 @@ package;
 //	Isso foi feito para ser usado naqueles vídeos que não nescessariamente trocam de state (cutscene da gf corrompida, monika codin, etc...)
 
 #if mobile
-import extension.webview.WebView;
+import WebView;
 import flixel.FlxG;
 import flixel.text.FlxText;
 import flixel.FlxSubstate;
