@@ -1,7 +1,7 @@
 package; //Furtado de um lugar secreto shhhhhhhhhhhhhhhhhhhhh
 
 #if mobile
-import extension.webview.WebView;
+import WebView;
 import flixel.FlxG;
 import flixel.FlxState;
 import flixel.FlxSubState;
